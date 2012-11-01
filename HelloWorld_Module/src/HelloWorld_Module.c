@@ -3,6 +3,7 @@
 
 static OOOModule * pModule = NULL;
 
+OOOModule * getModule(void) GCCO_SAFE_DS;
 OOOModule * getModule(void)
 {
 	if (!pModule)
