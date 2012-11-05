@@ -3,8 +3,8 @@
 
 static OOOModule * pModule = NULL;
 
-OOOModule * getModule(void) GCCO_SAFE_DS;
-OOOModule * getModule(void)
+OOOModule * init(void) GCCO_SAFE_DS;
+OOOModule * init(void)
 {
 	if (!pModule)
 	{
@@ -12,4 +12,14 @@ OOOModule * getModule(void)
 		OOOModuleExport(pModule, HelloWorld);
 	}
 	return pModule;
+}
+
+void uninit(void) GCCO_SAFE_DS;
+void uninit(void)
+{
+	if (pModule)
+	{
+		OOODestroy(pModule);
+		pModule = NULL;
+	}
 }

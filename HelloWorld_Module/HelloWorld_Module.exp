@@ -4,5 +4,6 @@
 #define EXPORT_MODULE_ID 1000
 #define EXPORT_NUMBER_START 0
 EXPORT_BEGIN
-	EXPORTN_SAFE(OOOModule *, getModule, (void), 0)
+	EXPORTN_SAFE(OOOModule *, init, (void), 0)
+	EXPORTN_SAFE(void, uninit, (void), 1)
 EXPORT_END
