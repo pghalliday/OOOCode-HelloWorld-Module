@@ -7,9 +7,6 @@
 [submodule "HelloWorld_Module/submodules/Module"]
 	path = HelloWorld_Module/submodules/Module
 	url = https://github.com/pghalliday/OOOCode-Module.git
-[submodule "HelloWorld_Module/submodules/UnitTest"]
-	path = HelloWorld_Module/submodules/UnitTest
-	url = https://github.com/pghalliday/OOOCode-UnitTest.git
 [submodule "HelloWorld_Module/submodules/Log"]
 	path = HelloWorld_Module/submodules/Log
 	url = https://github.com/pghalliday/OOOCode-Log.git
